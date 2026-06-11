@@ -21,12 +21,24 @@ export default function StudyMode({
   onBack,
 }: StudyModeProps) {
   const [sessionCards] = useState(() => {
+    let cards: typeof set.cards;
     if (mode === 'unlearned') {
       const ids = getUnlearned(set.name);
-      if (ids.length > 0) return set.cards.filter((c) => ids.includes(c.id));
-      setUnlearned(set.name, set.cards.map((c) => c.id));
+      if (ids.length > 0) {
+        cards = set.cards.filter((c) => ids.includes(c.id));
+      } else {
+        setUnlearned(set.name, set.cards.map((c) => c.id));
+        cards = [...set.cards];
+      }
+    } else {
+      if (getUnlearned(set.name).length === 0) {
+        setUnlearned(set.name, set.cards.map((c) => c.id));
+      }
+      cards = [...set.cards];
     }
-    return [...set.cards];
+    if (cards.length <= 1) return cards;
+    const start = Math.floor(Math.random() * cards.length);
+    return [...cards.slice(start), ...cards.slice(0, start)];
   });
 
   const [index, setIndex] = useState(0);

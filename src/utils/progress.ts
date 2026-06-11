@@ -49,9 +49,9 @@ export function getResultMessage(
     return `Straszny kujon albo ${title} ${teacher}!`;
   }
   if (pct > 90) return `Kujon. Masz jeszcze ${t}.`;
-  if (pct > 70) return `Spokojnie zdasz już teraz, a w razie czego masz jeszcze ${t} na powtórki.`;
+  if (pct > 70) return `Jest 👍🏻. W razie czego masz jeszcze ${t} na powtórki.`;
   if (pct > 65) return `Raczej bezpiecznie, masz jeszcze ${t}.`;
   if (pct > 55) return `Na dwoje babka wróżyła, ale masz jeszcze ${t}.`;
-  if (pct >= 40) return `Egzamin jest za ${t}. Tak se, ale raczej nie zdasz.`;
-  return `Żenada. Egzamin jest za ${t} — nie wiem, jak zamierzasz to zdać.`;
+  if (pct >= 40) return `Egzamin jest za ${t}. 👎🏻.`;
+  return `Żenada. Egzamin jest za ${t}`;
 }

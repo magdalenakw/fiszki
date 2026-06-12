@@ -44,7 +44,7 @@ export const sets: FlashcardSet[] = [
       { "id": 34, "pl": "mieć coś gdzieś (1)", "fr": "se ficher de qqch" },
       { "id": 35, "pl": "mieć coś gdzieś (2)", "fr": "se foutre de qqch" },
       { "id": 36, "pl": "począwszy od", "fr": "à partir de" },
-      { "id": 37, "pl": "ten/ta/to o którym mowa", "fr": "en question" },
+      { "id": 37, "pl": "ten/ta/to, o którym mowa", "fr": "en question" },
       { "id": 38, "pl": "kwestionować", "fr": "remettre en question" },
       { "id": 39, "pl": "zaniemówić z wrażenia", "fr": "rester bouche bée" },
       { "id": 40, "pl": "wkurzać kogoś", "fr": "casser les pieds à qqn" },

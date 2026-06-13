@@ -96,4 +96,31 @@ export const sets: FlashcardSet[] = [
       { "id": 86, "pl": "z góry przesądzone", "fr": "gagné d'avance" }
     ],
   },
+  {
+    id: 2,
+    name: 'Paris transformé',
+    deadline: '2026-06-19T10:45:00',
+    teacher: 'Perz',
+    isTeacherFemale: true,
+    cards: [
+      { "id": 1, "pl": "upiększać", "fr": "embellir" },
+      { "id": 2, "pl": "uzdrawiać, oczyszczać", "fr": "assainir" },
+      { "id": 3, "pl": "wielki projekt", "fr": "un projet d'envergure" },
+      { "id": 4, "pl": "prostoliniowy", "fr": "rectiligne" },
+      { "id": 5, "pl": "pagórkowaty, falisty", "fr": "vallonné" },
+      { "id": 6, "pl": "zdrowy", "fr": "salubre" },
+      { "id": 7, "pl": "ciasnota, przeludnienie", "fr": "la promiscuité" },
+      { "id": 8, "pl": "kanalizacja", "fr": "les égouts" },
+      { "id": 9, "pl": "przedmieście", "fr": "le faubourg" },
+      { "id": 10, "pl": "wspaniały", "fr": "grandiose" },
+      { "id": 11, "pl": "kamieniołom", "fr": "une carrière" },
+      { "id": 12, "pl": "trwały", "fr": "pérenne" },
+      { "id": 13, "pl": "gzyms", "fr": "la corniche" },
+      { "id": 14, "pl": "fryz", "fr": "la frise" },
+      { "id": 15, "pl": "przekątna", "fr": "la diagonale" },
+      { "id": 16, "pl": "lukarna, okno na poddaszu", "fr": "la lucarne" },
+      { "id": 17, "pl": "strych", "fr": "le comble" },
+      { "id": 18, "pl": "kute żelazo", "fr": "le fer forgé" },
+    ]
+  }
 ];
